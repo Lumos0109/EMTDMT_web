@@ -1,0 +1,30 @@
+{
+  "id": "3977060",
+  "name": "web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6517479",
+      "name": "文件-文件-1",
+      "font_class": "wj-wj-1",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "7959526",
+      "name": "操作-统计汇总",
+      "font_class": "cz-tjhz",
+      "unicode": "e7fe",
+      "unicode_decimal": 59390
+    },
+    {
+      "icon_id": "7959528",
+      "name": "操作-异常呈报",
+      "font_class": "cz-yccb",
+      "unicode": "e7ff",
+      "unicode_decimal": 59391
+    }
+  ]
+}

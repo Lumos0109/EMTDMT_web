@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3977060 */
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQ8AAsAAAAACYQAAAPwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDFAqGOIU/ATYCJAMQCwoABCAFhGcHRRs8CBFVnCPIfhzkpqwLIXS+oAhNcWRtsays8eUhg/Kq6iSDoDPgdvYAunOvBfQ7AMmBehHfHSJ1u2+7MXCC4B1HcwMv9UKZxlWsa8Jv9xO/3bTSEikRIo1KSfxxv9Kf4yvwbNMtK2hnKRrXEmiBoq7Lbo6oAf2GsQsL1TDfAgJQ8OlK6N138Gjoi2esXgpGAhklEBWTxQvmzYBb1GEqKARHuZueKSEZWCAkCrcB6d7nk69axg0Clghyr+Fz+8yG/TH6MdY8xhFf48PVwO0CwAEQAY0XZiDTq20TIQaxxkQ8RawSXoATI61B2USDh1XqgAXzxX+8QgNxAss0SLaWikfFt6hA4GMlB9p9jEEdRIhLu90AP5BqAOkLyPhyJy4sv9+pETWl7PkOb22Nxmu1N43NU7Sks9j8nOpJtojDnMx3KnrS7sCzR6XI06hjE38hY8ZrSTv5LpUm7zF3z5RsykzVlSppyTpJVKcJhmy6z6/3IbOSHj/mT54kP3tmPn06RiHHnoxOunn+sHmkkdUOaknnnddnaqOv9iTvQvFdyXuIaJ6fk+UsZjG8URumGUPKGGXFhHH55u6k4OixeRlPaMzonK6eyLgxuY0Gw0tn2u2MEVa2W5mwb38C/cvGMFgoZ1lJu02lNWl31Nbwiqy1Ylu3UF1e7iNcwiDXGUixVB/dts0WecgDvo2mI7qf+fWg6YisK8uCMsss6zaty9xOneZuZGxXtQE/b5q1ecuL3r2yflTfcWdD9w1zfZ/PnU2rMTa/Wrceun8qi18nngywsjrrY/Qw+jAbSmeoZnxIdzWGb5wMn+GnVd81VG5NLbvSYPmyRFaTFSxbTiQFviZxOa9OMCBSyMYnFLKaRsLj6xatYdSkVouMQeWc1tA3p6HEskzXfUNEOOvDeuxI1DZGs4p6m7EcABCz2xR7eLiN3lc0/8m2aexx5jRP5/9HfcZj7/vM3I68Mds3mufBTQCB90vJTw1bSrofkKZIZAl+U9ticzEiABQaBGKIy+87hCKAIwDhTvAFELgYIHKriUpkQ3BQtQQnty6gaGR1viogN0bmBtT1BEB4vUCgOwUirzcqkR9wCPuBk9cfFGNDr6aqG1ww3YVceHQQYJYqphRv0S15VXznvPCRuAxgECzdTCc3lBL3cUxZe7aIAsVZAmv+fhTHGeSchYSi+yK5Yxiq6F10zJLBAiN3grjAQwcEUCalnNaS/H5bxFOJ3XFD9GhhJeaixYFFZzZAN7K0Ud2FrC7VPDYhFN6lsEwCrHULiWksA/LiTSGChM7vEMk5DNRKNZXp0yuS2zsHoCDHSKl0JovrDzVWbc2x1yT0ey+rQ3wMBg==') format('woff2'),
+       url('iconfont.woff?t=1679798786145') format('woff'),
+       url('iconfont.ttf?t=1679798786145') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wj-wj-1:before {
+  content: "\e718";
+}
+
+.icon-cz-tjhz:before {
+  content: "\e7fe";
+}
+
+.icon-cz-yccb:before {
+  content: "\e7ff";
+}
+
