@@ -1,15 +1,6 @@
 import numpy as np
 from scapy.all import *
 
-def get_features_test(pcap, feature_path):
-    pkts = rdpcap(pcap)
-    for i, pkt in enumerate(pkts):
-        print(pkt['TCP'].payload.build()[:2] )
-    with open(feature_path, 'w') as file_object:
-        file_object.write('123"')
-
-
-
 def get_features(pcapfile,output_file_path,print_info=False):
     tls_type = {1:'Client Hello',2:'Server Hello',11:'Certificate',12:'Server Key Exchange',14:'Server Hello Done',
                 16:'Client Key Exchange',4:'New Session Ticket'}

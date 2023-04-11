@@ -5,26 +5,12 @@ import function
 import preprocessing
 import matplotlib.pyplot as plt
 import base64
+import numpy as np
 from model import *
 from scapy.all import *
-
-
-# Flask
-from flask import Flask, redirect, url_for, request, render_template, Response, jsonify, redirect, send_file
-from werkzeug.utils import secure_filename
+from flask import Flask, request, render_template, jsonify
 from gevent.pywsgi import WSGIServer
 
-# TensorFlow and tf.keras
-import tensorflow as tf
-from tensorflow import keras
-
-
-# Some utilites
-import numpy as np
-from util import base64_to_pil
-
-
-# Declare a flask app
 app = Flask(__name__)
 
 feature_path = 'features.csv'
@@ -49,15 +35,17 @@ def model_predict(datas, model):
 
 	return model(input1, input2, input3)
 
-def picture(arr_preds):
+def picture(arr_2):
 	# Min-Max 标准化
-	min_val = min(arr_preds)
-	max_val = max(arr_preds)
-	arr_preds = [(pred - min_val) / (max_val - min_val) for pred in arr_preds]
+	min_val = min(arr_2)
+	max_val = max(arr_2)
+	arr_2 = [(pred - min_val) / (max_val - min_val) for pred in arr_2]
+	total = np.sum(arr_2)
+	arr_2 = arr_2 / total
 
 	# 生成柱状图
 	plt.figure(figsize=(6, 4), dpi=100)
-	plt.bar(class_name, arr_preds)
+	plt.bar(class_name, arr_2)
 	plt.title('Classification Probabilities')
 	plt.xlabel('Class')
 	plt.ylabel('Probability')
@@ -91,10 +79,10 @@ def predict():
 		model.eval()
 		print('Model loaded. Start serving...')
 		preds, _, _, _ = model_predict(datas, model)
-		print(preds)
 		arr_preds = preds.detach().cpu().numpy()
 		arr_preds = np.squeeze(arr_preds)
 		graphic = picture(arr_preds)
+		print(arr_preds)
 		class_num = arr_preds.argmax()
 		max = np.max(arr_preds)
 		pred_proba = np.around(max, decimals=3)
